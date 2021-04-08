@@ -1,0 +1,458 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+   
+}
+
+/* menu landscape mode */
+
+#menuToggle {
+    display: none;
+}
+
+
+
+.container {
+    display: none;
+}
+
+.main-container {
+    /* display: block; */
+    background-image: url("medialunas.jpg");
+    width: auto;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    display: flex;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    border-radius: 200px;
+    display: block;
+}
+
+#menuToggle-landscape {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background-color: #37B1C0;
+    padding: 0;
+    text-align: center;
+}
+
+#menu-landscape {
+    height: 60px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 1px; */
+}
+
+
+#menu-landscape ul li {
+    display: inline;
+    flex-direction: row;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+#menu-landscape a {
+    transition: 0.5s;
+}
+
+/* .list-menu-landscape {
+    padding: 0;
+} */
+
+
+
+/* .main-photo img {
+    width: 100vw;
+    height: 300px;
+    
+} */
+
+a {
+    text-decoration: none;
+}
+
+nav a:link {
+    color: white;
+}
+
+nav a:visited {
+    color: white;
+}
+
+nav a:hover {
+    color: rgb(25, 71, 77);
+}
+
+nav a:active {
+    color: white
+}
+
+/* start main part with information */
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+#about, #main-course, #reservation {
+    background-color: rgba(59, 176, 191, 0.5);
+    margin: 10px 0;
+    padding: 10px 0 30px 0;
+}
+
+#empanadas, #desserts {
+    padding: 10px 0 10px 0;
+    margin-top: 0px;
+}
+
+.empanadas h2 {
+    padding-top: 40px;
+}
+
+section {
+    flex-basis: 100%
+}
+
+section h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+section p {
+    text-align: center;
+    font-size: 1rem;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+}
+
+section li {
+    text-align: center;
+    font-size: 1rem;
+    margin-left: 70px;
+    margin-right: 70px;
+    list-style: none;
+    padding: 10px;
+}
+
+
+.speisen img, .comidas img, .main-course img, .sweet img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* .container-main-course {
+    display: none;
+} */
+
+section, section h1 {
+  margin-top: 30px;
+}
+
+main li {
+  margin: 10px 0;
+}
+
+main a:link {
+    color: black;
+}
+
+main a:visited {
+    color: black;
+}
+
+main a:hover {
+    color: rgb(25, 71, 77);;
+}
+
+main a:active {
+    color: rgb(25, 71, 77);
+}
+
+.about, .main-course {
+  padding: 10px 0;
+  margin: 20px 0;
+}
+
+.main-course {
+  padding-top: 0px;
+}
+
+.container {
+  display: none;
+}
+
+.contact {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#reservation {
+  width: 100%;
+}
+
+/* .contact h3 {
+  
+} */
+
+#reservation h2 {
+  padding-top: 20px;
+}
+
+.reservation img {
+  width: 80%;
+  height: auto;
+}
+
+.impressum {
+  background-color: black;
+  color: white;
+  padding: 30px;
+  margin: 0;
+  width: 100%;
+  height: ;
+}
+
+.impressum p {
+  font-size: 15px;
+}
+
+.social i {
+  font-size: 50px;
+}
+
+.social {
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social a:visited {
+  color: black;
+}
+
+.social a:link {
+  color: black;
+}
+
+/* end media from 700 px to 992 px*/
+
+@media (min-width: 992px) {
+    
+    #menu-landscape {
+        height: 100px;
+    }
+
+    #menu-landscape ul li {
+        font-size: 1.5rem;      
+    }
+
+    section h1 {
+        font-size: 2.5rem;
+    }
+
+    section p, section li {
+        font-size: 1.5rem;
+    }
+
+    section h2 {  
+        font-size: 2rem;
+    }
+
+    section p {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .about {
+        height: 250px;
+        padding-top: 50px;
+    }
+
+    .logo {
+        width: 300px;
+        height: auto;
+        border-radius: 200px;
+        display: block;
+    }
+
+    .main-container {
+        /* display: block; */
+        background-image: url("medialunas.jpg");
+        width: auto;
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex;
+    }
+
+    .speisen img, .comidas img, .main-course img, .sweet img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }      
+
+    .reservation img {
+        width: 60%;
+        height: auto;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    #menuToggle-landscape {
+        display: block;
+        position: fixed;
+        z-index: 2;
+    }
+
+    .list-menu-landscape a {
+        font-size: 1.5rem;
+        padding-right: 15px;
+    }
+
+    .speisen img, .comidas img, .main-course img, .sweet img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    }
+    
+
+    .container {
+        display: flex;        
+    }
+
+    .container .some-main-courses {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        justify-content: space-around;
+    }
+    }
+
+    .container .some-main-courses .card {
+        position: relative;
+        }
+
+    .container .some-main-courses .card .face {
+        width: 400px;
+        height: 400px;
+        transition: 0.5s;
+    }
+
+    /*La foto se pone mas abajo para que luego vuelva a su posicion original al hacer hover*/
+    .container .some-main-courses .card .face.face1 {
+        position: relative;
+        background: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        transform: translateY(200px);
+    }
+
+    /* hace que la foto vaya hacia arriba */
+    .container .some-main-courses .card:hover .face.face1 {
+        transform: translateY(0px);
+
+    }
+
+
+    .container .some-main-courses .card .face.face1 .content {
+        transition: 0.5s;
+    }
+
+    .container .some-main-courses .card .face.face2 {
+        position: relative;
+        background: #fff;
+        display: flex;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+        transform: translateY(-200px);
+
+    }
+
+    .container .some-main-courses .card .face.face2 .content p {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container .some-main-courses .card .face.face2 .content {
+        width: 400px;
+        height: 400px;
+    }
+
+    /* Hace que la imagen con la explicacion vaya para abajo */
+
+    .some-main-courses .card:hover .face.face2 {
+        transform: translateY(0px);
+    }
+
+
+    .some-main-courses .card .face.face2 .content h3 {
+        text-align: center;
+        /* padding-top: 50px; */
+        font-size: 40px;
+        padding-bottom: 20px;
+    }
+
+    .container {
+        margin-top: -100px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .main-course, .speisen, .sweet{
+        margin-top: -10px;
+    }
+
+}
