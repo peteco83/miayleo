@@ -40,6 +40,31 @@ header {
   justify-content: center;
 }
 
+.carousel-container {
+  background-color: #9cd7df;
+  margin-top: -10px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+#carouselExampleCaptions {
+  margin: 0 auto;
+  width: 50vw;
+}
+
+.carousel h5 {
+  font-size: 50px;
+}
+
+/* .carousel {
+  height: 100%;
+  /* width: 100%; 
+} */
+
+.carousel img {
+  height: 700px;
+}
+
 .logo {
   width: 150px;
   height: auto;
