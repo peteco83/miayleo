@@ -24,11 +24,12 @@ body {
 }
 
 .main-container {
-  background-image: url("./images/medialunas.jpg");
-  width: auto;
+  background-image: url("./images/empanada_mano.jpeg");
+  width: 100vw;
   height: 100vh;
+  background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  /* background-size: cover; */
   display: flex;
 }
 header {
@@ -49,7 +50,8 @@ header {
 
 #carouselExampleCaptions {
   margin: 0 auto;
-  width: 50vw;
+  width: 1080px;
+  height: 700px;
 }
 
 .carousel h5 {
@@ -61,8 +63,9 @@ header {
   /* width: 100%; 
 } */
 
-.carousel img {
+.carousel-inner img {
   height: 700px;
+  width: 1%;
 }
 
 .logo {
@@ -329,11 +332,12 @@ main a:active {
 
   .main-container {
     /* display: block; */
-    background-image: url("./images/medialunas.jpg");
-    width: auto;
+    background-image: url("./images/empanada_mano.jpeg");
+    background-color: #edf0e7;
+    width: 100vw;
     height: 100vh;
     background-position: center;
-    background-size: cover;
+    /* background-size: cover; */
     background-attachment: fixed;
     display: flex;
   }
